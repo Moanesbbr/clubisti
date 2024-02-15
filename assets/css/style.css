@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar top */
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: rgba(238,224,208);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    font-weight: bold;
+    color:red;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+/* navbar top */
+/* main content */
+.main-content {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    animation: slideshow 7s infinite alternate;
+}
+
+@keyframes slideshow {
+   100% { background-image: url(../image/ccc.jpg); }
+    0% { background-image: url(../image/DERBI.webp); }
+}
+.boutique-main-content {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    background-color: #e30713;
+    background-position: 70%;
+    border-radius: 0 0 30% 30%;   
+}
+.cover-boutique {
+    height: 25vh;
+    background-image:url(../image/COUVE-BOUTIQUE_S_W.jpg); 
+    border-radius: 0 0 30% 30%;
+    background-size: cover;  
+   
+}
+
+/* navbar */
+#navbar-color{
+    background-color: rgba(238,224,208);
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: red;
+}
+/* navbar */
+
+/* content */
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.content h1{
+    font-size: 50px;
+    color: white;
+}
+.content p{
+    font-size: 25px;
+    color: white;
+}
+#btn1 button{
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1 button:hover{
+    background-color: red;
+}
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+/* content */
+
+/* main content */
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+.card>img {
+    max-height: 11x;
+    size: 45px;
+}
+.card>img:hover {
+    transform: scale(1.15) rotate(3deg);
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.left-line,
+.right-line {
+    position: absolute;
+    height: 1px;
+    width: 40%;
+    background-color: rgba(0,0,0,.125);
+}
+@media screen and (max-width:800px){
+    .left-line,
+.right-line {
+    width: 32%;
+}
+}
+
+.left-line {
+    top: 50%;
+    left: 0;
+}
+
+.right-line {
+    top: 50%;
+    right: 0;
+}
+
+.custom-button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+.custom-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button:hover {
+   transform: translateY(-10%);
+transition: all 0.3s ease;
+
+  }
+  
+  .custom-button:hover::after {
+    content: '\2192'; 
+    margin-left: 5px; 
+  }
+
+/* tickets card */
+  
+  
+/* card1 */
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn2 button:hover{
+    background-color: rgba(238,224,208);
+}
+/* card1 */
+
+/* card2 */
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-10px);
+}
+/* card2 */
+
+/* card3 */
+#c p{
+    font-weight: bold;
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn3 button:hover{
+    background-color: rgba(238,224,208);
+}
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+    }
+}
+/* card3 */
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn4 button:hover{
+    background-color: rgba(238,224,208);
+}
+
+.About-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.bd-placeholder-img.card-img-top{
+    width:100%;
+    height:225px;
+}
+
+
+/* footer */
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
